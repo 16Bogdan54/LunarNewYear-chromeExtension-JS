@@ -1,0 +1,50 @@
+body {
+    position: relative;
+}
+
+header,nav {
+    z-index: 1 !important;
+}
+
+.chinese-flashlight-1 {
+    position: fixed;
+    top: -1px;
+    left: 2rem;
+    z-index: 2 !important;
+    /*animation: light 1000ms;*/
+    /*animation-iteration-count: infinite;*/
+    /*animation-direction: normal;*/
+    /*animation-fill-mode: none;*/
+    /*animation-timing-function: linear;*/
+}
+
+.chinese-flashlight-2 {
+    position: fixed;
+    top: -1px;
+    right: 2rem;
+    z-index: 2;
+    /*animation: light 1000ms;*/
+    /*animation-iteration-count: infinite;*/
+    /*animation-direction: normal;*/
+    /*animation-fill-mode: none;*/
+    /*animation-timing-function: linear;*/
+}
+
+.hidden {
+    display: none;
+}
+
+.control-btn {
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+}
+
+/*@keyframes light {*/
+/*    50% {*/
+/*        transform: rotate(-15deg);*/
+/*    }*/
+/*    100% {*/
+/*        transform: rotate(15deg);*/
+/*    }*/
+/*}*/
