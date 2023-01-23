@@ -1,7 +1,7 @@
 {
   "manifest_version": 2,
-  "name": "AntiProcrastinator",
-  "description": "This extension blocks websites that make you lazy",
+  "name": "Lunar New Year",
+  "description": "This extension add flashlights on every webpage you visit",
   "version": "1.0.0",
   "content_scripts": [
     {
