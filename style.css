@@ -2,14 +2,14 @@ body {
     position: relative;
 }
 
-.chinese-flashlight-1 {
+.chinese-lantern-1 {
     position: fixed;
     top: -1px;
     left: 2rem;
     z-index: 1000 !important;
 }
 
-.chinese-flashlight-2 {
+.chinese-lantern-2 {
     position: fixed;
     top: -1px;
     right: 2rem;

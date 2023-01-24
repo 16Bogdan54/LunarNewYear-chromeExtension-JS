@@ -7,23 +7,23 @@ class Content {
         ]
     }
 
-    createFlashlight = (width, height, src, className) => {
+    createLantern = (width, height, src, className) => {
         const img = document.createElement('img');
         img.src = src
         img.classList.add(className);
         img.width = width
         img.height = height
-        img.alt = 'flashlight'
+        img.alt = 'lantern'
 
         return img;
     }
 
-    hideFlashlights = () => {
-        const flashLights = document.querySelectorAll('img[alt="flashlight"]')
+    hideLanterns = () => {
+        const lanterns = document.querySelectorAll('img[alt="lantern"]')
 
-        if (flashLights.length === 0) return;
+        if (lanterns.length === 0) return;
 
-        flashLights.forEach(flashlight => flashlight.classList.toggle('hidden'))
+        lanterns.forEach(lantern => lantern.classList.toggle('hidden'))
 
     }
 
@@ -32,27 +32,27 @@ class Content {
         button.className = 'control-btn'
         button.innerText = 'hide'
 
-        const flashLights = document.querySelectorAll('img[alt="flashlight"]')
+        const lanterns = document.querySelectorAll('img[alt="lantern"]')
 
-        if (flashLights.length === 0) return;
+        if (lanterns.length === 0) return;
 
-        button.addEventListener('click', this.hideFlashlights)
+        button.addEventListener('click', this.hideLanterns)
 
         return button;
     }
 
-    addFlashlight = () => {
+    addLanterns = () => {
         const WIDTH = 100;
         const HEIGHT = 100;
         const body = this.body;
         const src = this.flashlightVariations[0];
 
-        body.appendChild(this.createFlashlight(WIDTH, HEIGHT, src, 'chinese-flashlight-1'));
-        body.appendChild(this.createFlashlight(WIDTH, HEIGHT, src, 'chinese-flashlight-2'));
+        body.appendChild(this.createLantern(WIDTH, HEIGHT, src, 'chinese-lantern-1'));
+        body.appendChild(this.createLantern(WIDTH, HEIGHT, src, 'chinese-lantern-2'));
         body.appendChild(this.createButton())
     }
 
 }
 
 const content = new Content();
-content.addFlashlight()
+content.addLanterns()
