@@ -2,32 +2,18 @@ body {
     position: relative;
 }
 
-header,nav {
-    z-index: 1 !important;
-}
-
 .chinese-flashlight-1 {
     position: fixed;
     top: -1px;
     left: 2rem;
-    z-index: 2 !important;
-    /*animation: light 1000ms;*/
-    /*animation-iteration-count: infinite;*/
-    /*animation-direction: normal;*/
-    /*animation-fill-mode: none;*/
-    /*animation-timing-function: linear;*/
+    z-index: 1000 !important;
 }
 
 .chinese-flashlight-2 {
     position: fixed;
     top: -1px;
     right: 2rem;
-    z-index: 2;
-    /*animation: light 1000ms;*/
-    /*animation-iteration-count: infinite;*/
-    /*animation-direction: normal;*/
-    /*animation-fill-mode: none;*/
-    /*animation-timing-function: linear;*/
+    z-index: 1000 !important;
 }
 
 .hidden {
@@ -46,20 +32,12 @@ header,nav {
     font-weight: bold;
     color: #fff;
     transition: all ease-in-out .3s;
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+    z-index: 1000 !important;
 }
 
 .control-btn:hover {
     color: #FFD84B;
     transform: translateY(-10px);
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0 13px 27px -5px, rgba(0, 0, 0, 0.3) 0 8px 16px -8px;
 }
-
-/*@keyframes light {*/
-/*    50% {*/
-/*        transform: rotate(-15deg);*/
-/*    }*/
-/*    100% {*/
-/*        transform: rotate(15deg);*/
-/*    }*/
-/*}*/
