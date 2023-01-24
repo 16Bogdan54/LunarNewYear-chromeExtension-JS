@@ -19,11 +19,19 @@ class Content {
     }
 
     hideLanterns = () => {
+        const button = document.querySelector('.control-btn')
         const lanterns = document.querySelectorAll('img[alt="lantern"]')
+
+        button.style.opacity = '1';
 
         if (lanterns.length === 0) return;
 
         lanterns.forEach(lantern => lantern.classList.toggle('hidden'))
+
+        setTimeout(() => {
+            button.style.opacity = '.3';
+        }, 3000)
+
 
     }
 
