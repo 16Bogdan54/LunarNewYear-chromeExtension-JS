@@ -38,6 +38,21 @@ header,nav {
     position: fixed;
     bottom: 15px;
     right: 15px;
+    background-color: #CC232A;
+    border: 2px solid #A3262A;
+    border-radius: 10px;
+    padding: .3rem 1.5rem;
+    cursor: pointer;
+    font-weight: bold;
+    color: #fff;
+    transition: all ease-in-out .3s;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+.control-btn:hover {
+    color: #FFD84B;
+    transform: translateY(-10px);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 }
 
 /*@keyframes light {*/
