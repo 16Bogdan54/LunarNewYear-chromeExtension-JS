@@ -3,6 +3,11 @@
   "name": "Lunar New Year",
   "description": "This extension add flashlights on every webpage you visit",
   "version": "1.0.0",
+  "icons": {
+    "16": "images/16.png",
+    "48": "images/48.png",
+    "128": "images/128.png"
+  },
   "content_scripts": [
     {
       "matches": ["<all_urls>"],
